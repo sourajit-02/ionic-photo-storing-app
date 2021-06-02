@@ -1,0 +1,49 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title color="dark">My Gallery</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="new-image-wrapper">
+    <ion-icon
+      class="user-default-image"
+      name="person"
+      color="medium"
+      *ngIf="photoService?.photos?.length===0"
+    >
+    </ion-icon>
+
+    <img
+      *ngIf="photoService?.photos?.length>0"
+      [src]="photoService?.photos[0]?.data"
+    />
+    <div class="new-image-actions">
+      <ion-button
+        strong="true"
+        class="action-button"
+        (click)="photoService.getCamera()"
+      >
+        <div class="button-contents">
+          <ion-icon name="camera" class="image-action-icon"></ion-icon>
+          <span>Open Camera</span>
+        </div>
+      </ion-button>
+      <ion-button
+        strong="true"
+        class="action-button"
+        (click)="photoService.getGallery()"
+      >
+        <div class="button-contents">
+          <ion-icon name="image" class="image-action-icon"></ion-icon>
+          <span>Browse</span>
+        </div>
+      </ion-button>
+    </div>
+    <ion-input placeholder="Add caption here" class="input-caption"></ion-input>
+    <div class="new-image-submit">
+      <ion-button strong="true" class="submit-button save"> Save </ion-button>
+      <ion-button strong="true" class="submit-button clear"> Clear </ion-button>
+    </div>
+  </div>
+</ion-content>

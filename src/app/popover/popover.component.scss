@@ -1,0 +1,18 @@
+.pop-wrapper {
+  padding: 1em;
+}
+
+.pop-title {
+  color: #ccc;
+  border-bottom: 1px solid #222428;
+}
+
+.pop-title,
+.pop-item {
+  padding: .5em;
+}
+
+.pop-item {
+  display: flex;
+  justify-content: space-between;
+}

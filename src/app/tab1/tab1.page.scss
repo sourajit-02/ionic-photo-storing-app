@@ -1,0 +1,24 @@
+ion-toolbar {
+  --background: #8484ff;
+}
+
+ion-title {
+  font-weight: 600;
+  font-size: 30px;
+  text-align: center;
+}
+
+.content-nav {
+  display: flex;
+  padding: .75em 0 0 1.5em;
+}
+
+ion-searchbar {
+  --border-radius: 20px;
+}
+
+.menu-button {
+  --background: transparent;
+  --background-hover: #e5e5e5;
+  --box-shadow: none;
+}

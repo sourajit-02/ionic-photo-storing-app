@@ -1,0 +1,17 @@
+ion-tab-bar {
+  justify-content: space-between;
+}
+
+ion-tab-button {
+  --color: #222428;
+  --color-selected: #222428;
+  --padding-start: 0;
+  --padding-end: 0;
+  min-width: 50%;
+  font-size: 1em;
+  font-weight: 600;
+}
+
+.tab-selected {
+  --background: #ccc;
+}

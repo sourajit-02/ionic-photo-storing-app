@@ -1,0 +1,76 @@
+ion-toolbar {
+  --background: #8484ff;
+}
+
+ion-title {
+  font-weight: 600;
+  font-size: 30px;
+  text-align: center;
+}
+
+.new-image-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user-default-image {
+  font-size: 260px;
+}
+
+.new-image-actions {
+  padding: .5em 0 1.5em;
+  display: flex;
+  width: 60%;
+}
+
+.action-button {
+  --background: transparent;
+  --background-activated: #ccc;
+  --background-hover: #ccc;
+  --background-focused: #ccc;
+  --color-activated: #222428;
+  --color-focused: #222428;
+  --color-hover: #222428;
+  --box-shadow: none;
+  text-transform: capitalize;
+  height: auto;
+  width: 50%;
+}
+
+.button-contents {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #222428;
+  padding: .5em 0;
+}
+
+.image-action-icon {
+  font-size: 3em;
+}
+
+.input-caption {
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  width: 60%;
+}
+
+.new-image-submit {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5em 0 1em;
+}
+
+.submit-button {
+  --color: #222428;
+}
+
+.save {
+  --background: #8484ff;
+}
+
+.clear {
+  --background: #ccc;
+}
